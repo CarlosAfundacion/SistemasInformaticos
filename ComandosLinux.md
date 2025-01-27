@@ -9,6 +9,7 @@ En esta actividad, practicarás una serie de comandos esenciales de Linux para g
 - **mkdir**: Crea un nuevo directorio.
 - **rm**: Elimina archivos o directorios.
 - **cp**: Copia archivos o directorios de una ubicación a otra.
+- **pwd**: Imprime el directorio actual (Print Working Directory).
 - **mv**: Mueve o renombra archivos y directorios.
 - **chmod**: Cambia los permisos de acceso de un archivo o directorio.
 - **chown**: Cambia el propietario o grupo de un archivo o directorio.
