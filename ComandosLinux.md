@@ -35,32 +35,32 @@ En esta actividad, practicarás una serie de comandos esenciales de Linux para g
 **Ejercicios**
 
 **Primera parte**
-Listar todos los archivos del directorio bin.
-Listar todos los archivos del directorio tmp.
-Listar todos los archivos, incluidos los ocultos, del directorio raíz.
-Listar todos los archivos del directorio usr y sus subdirectorios.
-Cambiarse al directorio tmp
-Verificar que el directorio actual ha cambiado
-Mostrar el día y la hora actual
-Con un solo comando posicionarse en el directorio HOME.
-Verificar que se está en él.
-Cambiarse al directorio Imágenes
-Con un solo comando vuelve al directorio anterior sin escribir el nombre del directorio.
-Vete al directorio raíz y con un solo comando entra en el directorio boot y entra nuevamente en el directorio grub.
-Limpia la consola.
-Desde el directorio raíz con un solo comando, lista todos los archivos del directorio events que se encuentra dentro del directorio acpi y éste se encuentra dentro del directorio etc.
-Crea un nuevo documento en el escritorio que se llame primerDocumento, dentro del mismo que muestre el siguiente mensaje: Este es mi primer documento.
-Crea un nuevo documento en el escritorio que se llame segundoDocumento, cuyo contenido sea el contenido del primerDocumento pero en mayúsculas.
-Crea otro documento en el escritorio que se llame tercerDocumento.txt, dentro del mismo que muestre el siguiente mensaje: este es mi TERCER DOCUMENTO.
-Crea un cuarto fichero llamado cuartoFichero.txt, cuyo contenido sea el contenido del tercer fichero en minúsculas.
-Crea desde el directorio raíz un nuevo directorio llamado Prueba.
-Crea desde el directorio raíz llamado un nuevo documento dentro del directorio prueba que se llame primerDocumento.
-Descárgate una imagen y almacénala en Descargas.
-Vete al directorio Descargas y realiza una copia de la imagen que has descargado al directorio prueba.
-Vete al directorio raíz
-Verificar que el directorio actual ha cambiado
-Realiza una copia desde el directorio raíz, del fichero primerDocumento que se encuentra dentro del directorio prueba al escritorio.
-Muestra la fecha y la hora.
-Desde el directorio raíz, mueve el fichero primerDocumento que se encuentra en el escritorio al directorio descarga.
-Cambia el nombre de primerDocumento por primerDocumentoModificado.txt
+1. Listar todos los archivos del directorio `bin`.
+2. Listar todos los archivos del directorio `tmp`.
+3. Listar todos los archivos, incluidos los ocultos, del directorio raíz.
+4. Listar todos los archivos del directorio `usr` y sus subdirectorios.
+5. Cambiarse al directorio `tmp`.
+6. Verificar que el directorio actual ha cambiado.
+7. Mostrar el día y la hora actual.
+8. Con un solo comando posicionarse en el directorio `HOME`.
+9. Verificar que se está en él.
+10. Cambiarse al directorio `Imágenes`.
+11. Con un solo comando vuelve al directorio anterior sin escribir el nombre del directorio.
+12. Ir al directorio raíz y con un solo comando entrar en el directorio `boot` y luego en el directorio `grub`.
+13. Limpiar la consola.
+14. Desde el directorio raíz, listar con un solo comando todos los archivos del directorio `events`, que se encuentra dentro del directorio `acpi`, ubicado en el directorio `etc`.
+15. Crear un nuevo documento en el escritorio llamado `primerDocumento` que contenga el mensaje: "Este es mi primer documento".
+16. Crear un nuevo documento en el escritorio llamado `segundoDocumento`, cuyo contenido sea el contenido de `primerDocumento` pero en mayúsculas.
+17. Crear otro documento en el escritorio llamado `tercerDocumento.txt` que contenga el mensaje: "este es mi TERCER DOCUMENTO".
+18. Crear un cuarto fichero llamado `cuartoFichero.txt`, cuyo contenido sea el contenido del tercer fichero en minúsculas.
+19. Crear desde el directorio raíz un nuevo directorio llamado `Prueba`.
+20. Crear desde el directorio raíz un nuevo documento dentro del directorio `Prueba` que se llame `primerDocumento`.
+21. Descargar una imagen y almacenarla en la carpeta `Descargas`.
+22. Ir al directorio `Descargas` y realizar una copia de la imagen descargada al directorio `Prueba`.
+23. Ir al directorio raíz.
+24. Verificar que el directorio actual ha cambiado.
+25. Realizar una copia desde el directorio raíz del fichero `primerDocumento` que se encuentra en el directorio `Prueba` al escritorio.
+26. Mostrar la fecha y la hora.
+27. Desde el directorio raíz, mover el fichero `primerDocumento` que se encuentra en el escritorio al directorio `Descargas`.
+28. Cambiar el nombre de `primerDocumento` por `primerDocumentoModificado.txt`.
 
