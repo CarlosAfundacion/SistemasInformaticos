@@ -4,34 +4,138 @@
 
 En esta actividad, practicarás una serie de comandos esenciales de Linux para gestionar el sistema operativo, archivos, directorios, usuarios y procesos. A continuación, se describen algunos de los comandos necesarios para resolver los ejercicios:
 
-- **ls**: Lista los archivos y directorios dentro del directorio actual.
-- **cd**: Cambia el directorio de trabajo actual.
-- **mkdir**: Crea un nuevo directorio.
-- **rm**: Elimina archivos o directorios.
-- **cp**: Copia archivos o directorios de una ubicación a otra.
-- **pwd**: Imprime el directorio actual (Print Working Directory).
-- **mv**: Mueve o renombra archivos y directorios.
-- **chmod**: Cambia los permisos de acceso de un archivo o directorio.
-- **chown**: Cambia el propietario o grupo de un archivo o directorio.
-- **find**: Busca archivos y directorios en un sistema de archivos.
-- **grep**: Busca texto dentro de archivos.
-- **ps**: Muestra información sobre los procesos en ejecución.
-- **top**: Muestra en tiempo real los procesos activos en el sistema.
-- **kill**: Envía señales para terminar procesos específicos.
-- **tar**: Crea o extrae archivos comprimidos en formato tar.
-- **zip**: Comprime archivos en formato zip.
-- **df**: Muestra el espacio en disco disponible en los sistemas de archivos.
-- **du**: Muestra el uso del espacio en disco de archivos y directorios.
-- **clear**: Limpia la consola.
-- **touch**: Crea ficheros vacíos.
-- **echo**: Muestra texto en la salida estándar o lo escribe en un archivo.
-- **cat**: Muestra, combina o crea contenido en archivos.
-- **history**: Muestra el historial de comandos ejecutados.
-- **whoami**: Muestra el usuario actual.
-- **date**: Muestra la fecha y hora actual.
-- **cal**: Muestra el calendario.
-- **shutdown**: Apaga o reinicia el sistema.
-- **head** y **tail**: Muestran las primeras o últimas líneas de un archivo.
+Aquí tienes una descripción detallada de los comandos y modificadores utilizados en estas prácticas:
+
+---
+
+### **Comandos básicos de navegación y gestión de archivos**
+
+- **`ls`**: Lista el contenido de un directorio.
+  - **`-a`**: Muestra también los archivos ocultos (los que empiezan con `.`).
+  - **`-R`**: Lista de manera recursiva todos los archivos y subdirectorios.
+  - **`-l`**: Muestra detalles como permisos, tamaño y propietario.
+  - **`-h`**: Convierte los tamaños de archivo a un formato legible (por ejemplo, KB, MB).
+
+- **`cd`**: Cambia el directorio de trabajo.
+  - **`-`**: Vuelve al directorio anterior.
+  - **`~`**: Cambia al directorio HOME del usuario actual.
+
+- **`pwd`**: Muestra la ruta completa del directorio actual.
+
+- **`mkdir`**: Crea uno o varios directorios.
+  - **`-p`**: Crea directorios de manera recursiva.
+
+- **`cp`**: Copia archivos o directorios.
+  - **`-r`**: Copia directorios de manera recursiva.
+  - **`-u`**: Copia solo archivos más recientes que el destino.
+
+- **`mv`**: Mueve o renombra archivos y directorios.
+
+- **`rm`**: Elimina archivos o directorios.
+  - **`-r`**: Elimina directorios de forma recursiva.
+  - **`-f`**: Fuerza la eliminación sin pedir confirmación.
+
+- **`touch`**: Crea archivos vacíos.
+
+- **`echo`**: Muestra texto en la salida estándar o lo escribe en un archivo.
+  - **`>>`**: Añade contenido al final de un archivo.
+
+- **`cat`**: Muestra el contenido de un archivo, combina archivos o crea nuevos.
+  - **`>`**: Sobrescribe el contenido del archivo.
+  - **`>>`**: Añade contenido al archivo existente.
+
+- **`tr`**: Transforma texto.
+  - **`'[:lower:]' '[:upper:]'`**: Convierte el texto a mayúsculas.
+  - **`'[:upper:]' '[:lower:]'`**: Convierte el texto a minúsculas.
+
+---
+
+### **Comandos de gestión de archivos comprimidos**
+
+- **`tar`**: Crea o extrae archivos comprimidos en formato `.tar`.
+  - **`-c`**: Crea un archivo comprimido.
+  - **`-x`**: Extrae un archivo comprimido.
+  - **`-v`**: Muestra los detalles del proceso.
+  - **`-f`**: Especifica el nombre del archivo comprimido.
+
+- **`zip`**: Comprime archivos en formato `.zip`.
+- **`unzip`**: Extrae archivos comprimidos en formato `.zip`.
+
+- **`wget`**: Descarga archivos desde Internet.
+  - **`-O`**: Especifica el nombre del archivo descargado.
+
+---
+
+### **Comandos de gestión del sistema**
+
+- **`date`**: Muestra la fecha y la hora actual.
+
+- **`cal`**: Muestra un calendario.
+  - **`cal 2020`**: Muestra el calendario de todo el año 2020.
+  - **`cal 07 2020`**: Muestra el calendario de julio de 2020.
+
+- **`clear`**: Limpia la pantalla del terminal.
+
+- **`shutdown`**: Apaga o reinicia el sistema.
+  - **`now`**: Apaga el sistema de inmediato.
+  - **`+2`**: Programa el apagado en 2 minutos.
+  - **`-r`**: Reinicia el sistema.
+
+---
+
+### **Comandos de permisos y propietarios**
+
+- **`chmod`**: Cambia los permisos de un archivo o directorio.
+  - **`u`**: Propietario del archivo.
+  - **`g`**: Grupo propietario.
+  - **`o`**: Otros usuarios.
+  - **`+r`**: Añade permisos de lectura.
+  - **`-w`**: Elimina permisos de escritura.
+  - **`+x`**: Añade permisos de ejecución.
+
+- **`chown`**: Cambia el propietario o grupo de un archivo o directorio.
+  - **`<usuario>:<grupo>`**: Especifica el nuevo propietario y grupo.
+
+---
+
+### **Comandos para buscar archivos y contenido**
+
+- **`find`**: Busca archivos y directorios.
+  - **`-name`**: Busca por nombre.
+  - **`-type d`**: Busca solo directorios.
+  - **`-type f`**: Busca solo archivos.
+
+- **`grep`**: Busca texto dentro de archivos.
+  - **`-i`**: Ignora mayúsculas y minúsculas.
+  - **`-c`**: Muestra cuántas veces aparece la coincidencia.
+  - **`-r`**: Busca recursivamente en un directorio.
+
+---
+
+### **Comandos para procesos y sistema**
+
+- **`ps`**: Muestra información sobre los procesos en ejecución.
+  - **`-aux`**: Muestra todos los procesos, incluso los de otros usuarios.
+
+- **`top`**: Muestra en tiempo real los procesos activos del sistema.
+
+- **`kill`**: Envía señales para terminar un proceso.
+  - **`-9`**: Termina de manera forzada el proceso.
+
+---
+
+### **Otros comandos útiles**
+
+- **`history`**: Muestra el historial de comandos ejecutados.
+- **`whoami`**: Muestra el usuario actual.
+- **`head`**: Muestra las primeras líneas de un archivo.
+  - **`-n <n>`**: Especifica el número de líneas a mostrar.
+- **`tail`**: Muestra las últimas líneas de un archivo.
+  - **`-n <n>`**: Especifica el número de líneas a mostrar.
+- **`df`**: Muestra información del espacio en disco disponible.
+- **`du`**: Muestra el uso del espacio en disco de archivos y directorios.
+
+---
 
 **Ejercicios**
 
