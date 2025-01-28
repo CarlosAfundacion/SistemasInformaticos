@@ -155,7 +155,7 @@ Aquí tienes una descripción detallada de los comandos y modificadores utilizad
 11. Con un solo comando vuelve al directorio anterior sin escribir el nombre del directorio.
 12. Ir al directorio raíz y con un solo comando entrar en el directorio `boot` y luego en el directorio `grub`.
 13. Limpiar la consola.
-14. Desde el directorio raíz, listar con un solo comando todos los archivos del directorio `conf.d`, que se encuentra dentro del directorio `mysql`, ubicado en el directorio `etc`.
+14. Desde el directorio raíz, listar con un solo comando todos los archivos del directorio `systemd`, que se encuentra dentro del directorio `lib`, ubicado en el directorio `usr`.
 15. Crear un nuevo documento en el escritorio llamado `primerDocumento` que contenga el mensaje: "Este es mi primer documento".
 16. Crear un nuevo documento en el escritorio llamado `segundoDocumento`, cuyo contenido sea el contenido de `primerDocumento` pero en mayúsculas.
 17. Crear otro documento en el escritorio llamado `tercerDocumento.txt` que contenga el mensaje: "este es mi TERCER DOCUMENTO".
