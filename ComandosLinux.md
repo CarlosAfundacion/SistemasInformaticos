@@ -247,8 +247,8 @@ Aquí tienes una descripción detallada de los comandos y modificadores utilizad
 
 39. Mostrar los últimos 15 comandos ejecutados.  
 40. Mostrar el usuario actual que está ejecutando los comandos.  
-41. Mostrar las primeras 5 líneas del archivo `logs.txt`.  
-42. Mostrar las últimas 3 líneas del archivo `logs.txt`.  
+41. Mostrar las primeras 5 líneas del archivo `/var/log/syslog`.  
+42. Mostrar las últimas 3 líneas del archivo `/var/log/syslog`.  
 43. Mostrar el espacio en disco disponible en el sistema en formato legible.  
 44. Mostrar el uso de disco del directorio `Descargas`.  
 
