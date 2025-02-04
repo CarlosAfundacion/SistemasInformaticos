@@ -52,12 +52,15 @@ Aquí tienes una descripción detallada de los comandos y modificadores utilizad
 
 ### **Comandos de gestión de archivos comprimidos**
 
-- **`tar`**: Crea o extrae archivos comprimidos en formato `.tar`.
+-**`-C`**: Este operador, se puede concatenar a otros comandos para posicionarse en un directorio concreto.
+
+- **`tar`**: Crea o extrae archivos comprimidos en formato `.tar`. **En el caso de `tar`el orden de los operadores condiciona el resultado del comando**
   - **`-c`**: Crea un archivo comprimido.
+  - **`-z`**: usa gzip para la compresión.
   - **`-x`**: Extrae un archivo comprimido.
   - **`-v`**: Muestra los detalles del proceso.
   - **`-f`**: Especifica el nombre del archivo comprimido.
-  - **`-z`**: usa gzip para la compresión.
+ 
 
 - **`zip`**: Comprime archivos en formato `.zip`.
 - **`unzip`**: Extrae archivos comprimidos en formato `.zip`.
