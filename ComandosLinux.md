@@ -201,10 +201,10 @@ Aquí tienes una descripción detallada de los comandos y modificadores utilizad
 
 15. Comprimir el directorio `Prueba` en un archivo llamado `PruebaBackup.tar.gz` utilizando compresión gzip.  
 16. Extraer el archivo comprimido `PruebaBackup.tar.gz` en un nuevo directorio llamado `PruebaRestaurada`.  
-17. Descargar un archivo `.zip` desde internet y extraerlo en el directorio `Descargas`.  
+17. Descargar un archivo `.zip` desde [internet](https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip) y extraerlo en el directorio `Descargas`.  
 18. Comprimir los archivos del directorio `Documentos` en un archivo llamado `archivos.zip`.  
 19. Extraer el contenido del archivo `archivos.zip` en el directorio `Extraido`.  
-20. Descargar un archivo desde una URL y guardarlo como `archivo_descargado.txt`.  
+20. Descargar un archivo desde una [URL](https://workupload.com/start/zNtEUqDL) y guardarlo como `archivo_descargado.txt`.  
 
 ---
 
