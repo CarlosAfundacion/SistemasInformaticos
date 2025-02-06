@@ -266,11 +266,11 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 #### **Comandos básicos de navegación y gestión de archivos**
 
-1. Listar todos los archivos y subdirectorios del directorio `var` recursivamente con formato detallado.  
+**1. Listar todos los archivos y subdirectorios del directorio `var` recursivamente con formato detallado.**  
 2. Crear un directorio llamado `TestRecursivo` dentro del directorio `Documentos` y, dentro de él, otro directorio llamado `SubTestRecursivo`.  
 3. Copiar solo los archivos más recientes del directorio `/etc` al directorio `tmp`.  
 4. Mover el directorio `SubTestRecursivo` dentro de `TestRecursivo` al directorio `Escritorio` y renombrarlo a `RenamedDir`.  
-5. Eliminar todos los archivos con extensión `.log` en el directorio `var/log` de forma recursiva y sin confirmación.  
+**5. Eliminar todos los archivos con extensión `.log` en el directorio `var/log` de forma recursiva y sin confirmación.**
 6. Listar el contenido del directorio `/var/log` mostrando los tamaños en un formato legible.  
 7. Cambiar al directorio `/etc`, luego regresar al directorio anterior sin escribir su nombre.  
 8. Crear un directorio llamado `Proyecto/Linux/Ejercicios` en una sola línea.  
@@ -285,9 +285,9 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 #### **Gestión de archivos comprimidos**
 
-15. Comprimir el directorio `Prueba` en un archivo llamado `PruebaBackup.tar.gz` utilizando compresión gzip.  
+**15. Comprimir el directorio `Prueba` en un archivo llamado `PruebaBackup.tar.gz` utilizando compresión gzip.**  
 16. Extraer el archivo comprimido `PruebaBackup.tar.gz` en un nuevo directorio llamado `PruebaRestaurada`.  
-17. Descargar un archivo `.zip` desde [internet](https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip) y extraerlo en el directorio `Descargas`.  
+**17. Descargar un archivo `.zip` desde [internet](https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip) y extraerlo en el directorio `Descargas`.**
 18. Comprimir los archivos del directorio `Documentos` en un archivo llamado `archivos.zip`.  
 19. Extraer el contenido del archivo `archivos.zip` en el directorio `Extraido`.  
 20. Descargar un archivo desde una [URL](https://workupload.com/start/zNtEUqDL) y guardarlo como `archivo_descargado.txt`.  
@@ -296,12 +296,12 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 #### **Permisos y propietarios**
 
-21. Crear un directorio llamado `Seguridad` y asignarle permisos de lectura y escritura solo para el propietario.  
+**21. Crear un directorio llamado `Seguridad` y asignarle permisos de lectura y escritura solo para el propietario.**  
 22. Cambiar el propietario del archivo `/tmp/archivoPermisos.txt` a un usuario específico llamado `user1` y asignarle el grupo `users`.  
 23. Cambiar los permisos de todos los archivos en el directorio `Seguridad` para que sean ejecutables por el propietario.  
 24. Añadir permisos de lectura al archivo `privado.txt` para todos los usuarios.  
 25. Eliminar permisos de escritura del archivo `configuracion.txt` para el propietario.  
-26. Cambiar el propietario del archivo `archivo.txt` al usuario `admin` y asignarle el grupo `root`.  
+**26. Cambiar el propietario del archivo `archivo.txt` al usuario `admin` y asignarle el grupo `root`.**  
 
 ---
 
@@ -310,15 +310,15 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 27. Buscar en el directorio `/etc` todos los archivos cuyo nombre comience con `host`.  
 28. Buscar todas las líneas que contengan la palabra `root` en los archivos dentro del directorio `/etc` y contar cuántas veces aparece.  
 29. Buscar todos los directorios dentro de `/var` cuyo nombre contenga la palabra `log`.  
-30. Buscar la palabra `error` en el archivo `/var/log/syslog` ignorando mayúsculas y minúsculas.  
+**30. Buscar la palabra `error` en el archivo `/var/log/syslog` ignorando mayúsculas y minúsculas.**  
 
 ---
 
 #### **Gestión del sistema**
 
 31. Mostrar el calendario completo del año 2025.  
-32. Programar un apagado del sistema para dentro de 5 minutos.  
-33. Cancelar el apagado programado.  
+**32. Programar un apagado del sistema para dentro de 5 minutos.**  
+**33. Cancelar el apagado programado.**  
 34. Mostrar el calendario de diciembre de 2023.  
 
 ---
@@ -327,8 +327,8 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 35. Listar los procesos en ejecución para un usuario específico llamado `user1`.  
 36. Finalizar todos los procesos que estén ejecutando un programa llamado `firefox`.  
-37. Listar todos los procesos del sistema con información detallada.  
-38. Finalizar el proceso con PID `1234` utilizando una señal forzada.  
+**37. Listar todos los procesos del sistema con información detallada.**  
+**38. Finalizar el proceso con PID `1234` utilizando una señal forzada.**  
 
 ---
 
@@ -336,9 +336,9 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 39. Mostrar los últimos 15 comandos ejecutados.  
 40. Mostrar el usuario actual que está ejecutando los comandos.  
-41. Mostrar las primeras 5 líneas del archivo `/var/log/syslog`.  
+**41. Mostrar las primeras 5 líneas del archivo `/var/log/syslog`.**  
 42. Mostrar las últimas 3 líneas del archivo `/var/log/syslog`.  
-43. Mostrar el espacio en disco disponible en el sistema en formato legible.  
+**43. Mostrar el espacio en disco disponible en el sistema en formato legible.**  
 44. Mostrar el uso de disco del directorio `Descargas`.  
 
 ---
