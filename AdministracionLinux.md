@@ -138,6 +138,4 @@ done
 
 ---
 
-# **Conclusión**
-Este documento proporciona una guía detallada sobre la administración de un sistema Linux, asegurando que el usuario pueda resolver todos los ejercicios planteados.
 
