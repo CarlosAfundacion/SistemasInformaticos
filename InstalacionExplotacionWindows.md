@@ -74,7 +74,6 @@ Para instalar un segundo Windows 10 y configurar un arranque dual, se deben segu
    - `{current}` hace referencia al sistema operativo en uso.
    - `{default}` apunta al sistema predeterminado de arranque.
 
-6. **Capturar la pantalla del gestor de arranque** tras realizar los cambios para verificar que los nombres han sido aplicados correctamente.
 
 ### 3.2. Uso de comandos en CMD
 
