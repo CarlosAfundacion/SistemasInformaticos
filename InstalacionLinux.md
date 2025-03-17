@@ -89,7 +89,7 @@ El **root (`/`)** es el directorio base del sistema. Todos los demás directorio
 
 ---
 
-### 7. Gestión de Software (MUY DETALLADO)
+### 7. Gestión de Software 
 
 #### 7.1. Gestores de Paquetes
 Un **gestor de paquetes** facilita la instalación, actualización y eliminación de software en Linux. Se encarga de resolver dependencias y administrar versiones de programas. Los principales gestores según la distribución son:
@@ -143,7 +143,7 @@ Snap permite actualizaciones automáticas y compatibilidad en diversas distribuc
 
 ---
 
-### 8. Personalización del Escritorio (MUY DETALLADO)
+### 8. Personalización del Escritorio 
 
 #### 8.1. Cambio de Fondo de Pantalla
 1. Ir a **Configuración > Fondo de pantalla**.
@@ -175,7 +175,7 @@ GNOME Tweaks permite personalizar iconos, temas y ajustes de ventanas.
 
 ---
 
-### 9. Administración de Usuarios (MUY DETALLADO)
+### 9. Administración de Usuarios 
 
 #### 9.1. Creación de Usuario con Webmin
 1. Acceder a Webmin en `https://localhost:10000`.
