@@ -232,45 +232,144 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 **Primera parte**
 1. Listar todos los archivos del directorio `bin`.
-2. Listar todos los archivos del directorio `tmp`.
-3. Listar todos los archivos, incluidos los ocultos, del directorio raíz.
-4. Listar todos los archivos del directorio `usr` y sus subdirectorios.
-5. Cambiarse al directorio `tmp`.
-6. Verificar que el directorio actual ha cambiado.
-7. Mostrar el día y la hora actual.
-8. Con un solo comando posicionarse en el directorio `HOME`.
-9. Verificar que se está en él.
-10. Cambiarse al directorio `Imágenes`.
-11. Con un solo comando vuelve al directorio anterior sin escribir el nombre del directorio.
-12. Ir al directorio raíz y con un solo comando entrar en el directorio `boot` y luego en el directorio `grub`.
-13. Limpiar la consola.
-14. Desde el directorio raíz, listar con un solo comando todos los archivos del directorio `systemd`, que se encuentra dentro del directorio `lib`, ubicado en el directorio `usr`.
-15. Crear un nuevo documento en el escritorio llamado `primerDocumento` que contenga el mensaje: "Este es mi primer documento".
-16. Crear un nuevo documento en el escritorio llamado `segundoDocumento`, cuyo contenido sea el contenido de `primerDocumento` pero en mayúsculas.
-17. Crear otro documento en el escritorio llamado `tercerDocumento.txt` que contenga el mensaje: "este es mi TERCER DOCUMENTO".
-18. Crear un cuarto fichero llamado `cuartoFichero.txt`, cuyo contenido sea el contenido del tercer fichero en minúsculas.
-19. Crear desde el directorio raíz un nuevo directorio llamado `Prueba`.
-20. Crear desde el directorio raíz un nuevo documento dentro del directorio `Prueba` que se llame `primerDocumento`.
-21. Descargar una imagen y almacenarla en la carpeta `Descargas`.
-22. Ir al directorio `Descargas` y realizar una copia de la imagen descargada al directorio `Prueba`.
-23. Ir al directorio raíz.
-24. Verificar que el directorio actual ha cambiado.
-25. Realizar una copia desde el directorio raíz del fichero `primerDocumento` que se encuentra en el directorio `Prueba` al escritorio.
-26. Mostrar la fecha y la hora.
-27. Desde el directorio raíz, mover el fichero `primerDocumento` que se encuentra en el escritorio al directorio `Descargas`.
-28. Cambiar el nombre de `primerDocumento` por `primerDocumentoModificado.txt`.
+```bash
+   ls /bin
+```
+   
+3. Listar todos los archivos del directorio `tmp`.
+```bash
+   ls /tmp
+```
+4. Listar todos los archivos, incluidos los ocultos, del directorio raíz.
+```bash
+   ls -a /
+```
+6. Listar todos los archivos del directorio `usr` y sus subdirectorios.
+```bash
+   ls -R /usr
+```
+7. Cambiarse al directorio `tmp`.
+```bash
+   cd /tmp
+```
+9. Verificar que el directorio actual ha cambiado.
+```bash
+  pwd
+```
+10. Mostrar el día y la hora actual.
+```bash
+   date
+```
+12. Con un solo comando posicionarse en el directorio `HOME`.
+```bash
+   cd
+```
+o
 
+```bash
+   cd ~
+```
+13. Verificar que se está en él.
+```bash
+   pwd
+```
+15. Cambiarse al directorio `Imágenes`.
+```bash
+   cd Imágenes
+```
+17. Con un solo comando vuelve al directorio anterior sin escribir el nombre del directorio.
+```bash
+   cd -
+```
+
+19. Ir al directorio raíz y con un solo comando entrar en el directorio `boot` y luego en el directorio `grub`.
+```bash
+   cd /
+   cd /boot/grub
+```
+21. Limpiar la consola.
+```bash
+   clear
+```
+23. Desde el directorio raíz, listar con un solo comando todos los archivos del directorio `systemd`, que se encuentra dentro del directorio `lib`, ubicado en el directorio `usr`.
+```bash
+   ls /usr/lib/systemd
+```
+25. Crear un nuevo documento en el escritorio llamado `primerDocumento` que contenga el mensaje: "Este es mi primer documento".
+```bash
+   echo "Este es mi primer documento" > ~/Escritorio/primerDocumento
+```
+27. Crear un nuevo documento en el escritorio llamado `segundoDocumento`, cuyo contenido sea el contenido de `primerDocumento` pero en mayúsculas.
+```bash
+   cat ~/Escritorio/primerDocumento | tr '[:lower:]' '[:upper:]' > ~/Escritorio/segundoDocumento
+```
+29. Crear otro documento en el escritorio llamado `tercerDocumento.txt` que contenga el mensaje: "este es mi TERCER DOCUMENTO".
+```bash
+   echo "este es mi TERCER DOCUMENTO" > ~/Escritorio/tercerDocumento.txt
+```
+31. Crear un cuarto fichero llamado `cuartoFichero.txt`, cuyo contenido sea el contenido del tercer fichero en minúsculas.
+```bash
+   cat ~/Escritorio/tercerDocumento.txt | tr '[:upper:]' '[:lower:]' > ~/Escritorio/cuartoFichero.txt
+```
+33. Crear desde el directorio raíz un nuevo directorio llamado `Prueba`.
+```bash
+   sudo mkdir /Prueba
+```
+35. Crear desde el directorio raíz un nuevo documento dentro del directorio `Prueba` que se llame `primerDocumento`.
+```bash
+   sudo touch /Prueba/primerDocumento
+```
+Crea el documento sin contenido
+37. Descargar una imagen y almacenarla en la carpeta `Descargas`.
+```bash
+   wget -O ~/Descargas/imagen.jpg https://url.com/imagenDeIntenet.jpg
+```
+37. Ir al directorio `Descargas` y realizar una copia de la imagen descargada al directorio `Prueba`.
+```bash
+   cd ~/Descargas
+   cp imagen.jpg /Prueba/
+``` 
+39. Ir al directorio raíz.
+```bash
+   cd /
+``` 
+41. Verificar que el directorio actual ha cambiado.
+```bash
+   pwd
+``` 
+43. Realizar una copia desde el directorio raíz del fichero `primerDocumento` que se encuentra en el directorio `Prueba` al escritorio.
+```bash
+   cp /Prueba/primerDocumento ~/Escritorio/
+``` 
+45. Mostrar la fecha y la hora.
+```bash
+   date
+``` 
+47. Desde el directorio raíz, mover el fichero `primerDocumento` que se encuentra en el escritorio al directorio `Descargas`.
+```bash
+   mv ~/Escritorio/primerDocumento ~/Descargas/
+``` 
+49. Cambiar el nombre de `primerDocumento` por `primerDocumentoModificado.txt`.
+```bash
+   mv ~/Descargas/primerDocumento ~/Descargas/primerDocumentoModificado.txt
+```
 ---
 
 **Segunda parte**
 
 #### **Comandos básicos de navegación y gestión de archivos**
 
-**1. Listar todos los archivos y subdirectorios del directorio `var` recursivamente con formato detallado.**  
+**1. Listar todos los archivos y subdirectorios del directorio `var` recursivamente con formato detallado.** 
+```bash
+   ls -la -R /var
+```
 2. Crear un directorio llamado `TestRecursivo` dentro del directorio `Documentos` y, dentro de él, otro directorio llamado `SubTestRecursivo`.  
 3. Copiar solo los archivos más recientes del directorio `/etc` al directorio `tmp`.  
 4. Mover el directorio `SubTestRecursivo` dentro de `TestRecursivo` al directorio `Escritorio` y renombrarlo a `RenamedDir`.  
 **5. Eliminar todos los archivos con extensión `.log` en el directorio `var/log` de forma recursiva y sin confirmación.**
+```bash
+   udo find /var/log -type f -name "*.log" -delete
+```
 6. Listar el contenido del directorio `/var/log` mostrando los tamaños en un formato legible.  
 7. Cambiar al directorio `/etc`, luego regresar al directorio anterior sin escribir su nombre.  
 8. Crear un directorio llamado `Proyecto/Linux/Ejercicios` en una sola línea.  
@@ -285,9 +384,24 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 #### **Gestión de archivos comprimidos**
 
-**15. Comprimir el directorio `Prueba` en un archivo llamado `PruebaBackup.tar.gz` utilizando compresión gzip.**  
+**15. Comprimir el directorio `Prueba` en un archivo llamado `PruebaBackup.tar.gz` utilizando compresión gzip.** 
+```bash
+   tar -czvf PruebaBackup.tar.gz /Prueba
+```
 16. Extraer el archivo comprimido `PruebaBackup.tar.gz` en un nuevo directorio llamado `PruebaRestaurada`.  
 **17. Descargar un archivo `.zip` desde [internet](https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip) y extraerlo en el directorio `Descargas`.**
+```bash
+   wget -P ~/Descargas https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip
+   cd ~/Descargas
+   unzip mvh_instrucciones.zip
+```
+o
+```bash
+   wget -P ~/Descargas https://www.uv.es/fragar/html/zips/mvh_instrucciones.zip
+   
+   unzip  ~/Descargas/mvh_instrucciones.zip -d ~/Descargas/
+```
+El -P a diferencia del -O, mantiene el nombre del archivo tal cual se encuentra en el enlace
 18. Comprimir los archivos del directorio `Documentos` en un archivo llamado `archivos.zip`.  
 19. Extraer el contenido del archivo `archivos.zip` en el directorio `Extraido`.  
 20. Descargar un archivo desde una [URL](https://workupload.com/start/zNtEUqDL) y guardarlo como `archivo_descargado.txt`.  
@@ -296,12 +410,19 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 #### **Permisos y propietarios**
 
-**21. Crear un directorio llamado `Seguridad` y asignarle permisos de lectura y escritura solo para el propietario.**  
+**21. Crear un directorio llamado `Seguridad` y asignarle permisos de lectura y escritura solo para el propietario.** 
+```bash
+   mkdir ~/Seguridad
+   chmod 600 ~/Seguridad
+```
 22. Cambiar el propietario del archivo `/tmp/archivoPermisos.txt` a un usuario específico llamado `user1` y asignarle el grupo `users`.  
 23. Cambiar los permisos de todos los archivos en el directorio `Seguridad` para que sean ejecutables por el propietario.  
 24. Añadir permisos de lectura al archivo `privado.txt` para todos los usuarios.  
 25. Eliminar permisos de escritura del archivo `configuracion.txt` para el propietario.  
-**26. Cambiar el propietario del archivo `archivo.txt` al usuario `admin` y asignarle el grupo `root`.**  
+**26. Cambiar el propietario del archivo `archivo.txt` al usuario `admin` y asignarle el grupo `root`.**
+```bash
+   sudo chown admin:root archivo.txt
+```
 
 ---
 
@@ -311,14 +432,22 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 28. Buscar todas las líneas que contengan la palabra `root` en los archivos dentro del directorio `/etc` y contar cuántas veces aparece.  
 29. Buscar todos los directorios dentro de `/var` cuyo nombre contenga la palabra `log`.  
 **30. Buscar la palabra `error` en el archivo `/var/log/syslog` ignorando mayúsculas y minúsculas.**  
-
+```bash
+   grep -i "error" /var/log/syslog
+```
 ---
 
 #### **Gestión del sistema**
 
 31. Mostrar el calendario completo del año 2025.  
-**32. Programar un apagado del sistema para dentro de 5 minutos.**  
+**32. Programar un apagado del sistema para dentro de 5 minutos.**
+```bash
+   sudo shutdown -h +5
+``` 
 **33. Cancelar el apagado programado.**  
+```bash
+   sudo shutdown -c
+```
 34. Mostrar el calendario de diciembre de 2023.  
 
 ---
@@ -327,8 +456,14 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 35. Listar los procesos en ejecución para un usuario específico llamado `user1`.  
 36. Finalizar todos los procesos que estén ejecutando un programa llamado `firefox`.  
-**37. Listar todos los procesos del sistema con información detallada.**  
+**37. Listar todos los procesos del sistema con información detallada.**
+```bash
+   ps aux
+``` 
 **38. Finalizar el proceso con PID `1234` utilizando una señal forzada.**  
+```bash
+   sudo kill -9 1234
+```
 
 ---
 
@@ -336,9 +471,15 @@ En Linux, algunos comandos admiten tanto `-r` como `-R`, pero **su significado d
 
 39. Mostrar los últimos 15 comandos ejecutados.  
 40. Mostrar el usuario actual que está ejecutando los comandos.  
-**41. Mostrar las primeras 5 líneas del archivo `/var/log/syslog`.**  
+**41. Mostrar las primeras 5 líneas del archivo `/var/log/syslog`.**
+```bash
+   head -n 5 /var/log/syslog
+``` 
 42. Mostrar las últimas 3 líneas del archivo `/var/log/syslog`.  
-**43. Mostrar el espacio en disco disponible en el sistema en formato legible.**  
+**43. Mostrar el espacio en disco disponible en el sistema en formato legible.**
+```bash
+   df -hr
+```
 44. Mostrar el uso de disco del directorio `Descargas`.  
 
 ---
